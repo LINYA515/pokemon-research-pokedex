@@ -1,0 +1,36 @@
+[Unit]
+Description=Pokemon public demonstration
+After=network.target
+
+[Service]
+Type=simple
+User=pokemon-web
+Group=pokemon-web
+WorkingDirectory=/opt/pokemon-web/current
+Environment=PYTHONDONTWRITEBYTECODE=1
+Environment=PYTHONUNBUFFERED=1
+Environment=POKE_LLM_MODEL=
+Environment=POKE_LLM_API_KEY=
+Environment=POKE_EMBEDDING_MODEL_PATH=
+Environment=HF_HUB_OFFLINE=1
+Environment=TRANSFORMERS_OFFLINE=1
+Environment=OMP_NUM_THREADS=1
+Environment=OPENBLAS_NUM_THREADS=1
+ExecStart=/opt/pokemon-web/venv/bin/python -m uvicorn backend.main:app --host 127.0.0.1 --port 8765 --workers 1 --proxy-headers --forwarded-allow-ips=127.0.0.1 --no-access-log
+Restart=on-failure
+RestartSec=3
+TimeoutStopSec=30
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/pokemon-web
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+MemoryHigh=512M
+MemoryMax=768M
+CPUQuota=150%
+TasksMax=64
+UMask=0027
+
+[Install]
+WantedBy=multi-user.target
