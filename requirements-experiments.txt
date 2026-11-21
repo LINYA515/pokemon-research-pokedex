@@ -1,0 +1,4 @@
+# 仅用于运行遗传算法对照实验并导出图表。
+-r requirements.txt
+matplotlib>=3.8,<4
+tzdata>=2024.1

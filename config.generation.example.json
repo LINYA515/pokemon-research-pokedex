@@ -1,0 +1,7 @@
+{
+  "base_model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "base_model_revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+  "lora_path": "",
+  "lora_sha256": "",
+  "lora_base_revision": ""
+}

@@ -1,0 +1,40 @@
+# 个人配置、凭据与本机状态
+.env
+.env.*
+!.env.example
+*.local.json
+*.local.*
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+*known_hosts*
+.DS_Store
+Thumbs.db
+logs/
+outputs/
+results/
+artifacts/
+
+# 环境、缓存和构建输出
+.venv*/
+.tmp/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+frontend/node_modules/
+frontend/dist/
+*.egg-info/
+
+# 数据可从固定来源重建；图像和模型按需下载
+data/
+*.sqlite*
+*.faiss
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.onnx
+*.zip
+*.tar.gz

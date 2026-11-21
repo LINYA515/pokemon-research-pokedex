@@ -25,7 +25,7 @@ powershell -ExecutionPolicy Bypass -File .\setup.ps1
 powershell -ExecutionPolicy Bypass -File .\start.ps1
 ```
 
-打开 **http://127.0.0.1:8765**。端口占用时使用 `start.ps1 -Port 8766`。安装脚本会创建项目虚拟环境、安装依赖、构建前端并重建图鉴数据库；不会自动下载生成模型或调用付费模型。
+打开 **[http://127.0.0.1:8765](http://127.0.0.1:8765)**。端口占用时使用 `start.ps1 -Port 8766`。安装脚本会创建项目虚拟环境、安装依赖、构建前端并重建图鉴数据库；不会自动下载生成模型或调用付费模型。
 
 ### Linux / macOS
 

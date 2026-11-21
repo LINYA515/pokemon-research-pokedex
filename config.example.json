@@ -1,0 +1,5 @@
+{
+  "POKE_LLM_BASE_URL": "http://127.0.0.1:11434/v1",
+  "POKE_LLM_MODEL": "",
+  "POKE_LLM_API_KEY": ""
+}
