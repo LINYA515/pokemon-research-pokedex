@@ -1,0 +1,97 @@
+.team-optimizer { background: #fff; border: 1px solid var(--line); border-radius: 8px; margin: 22px 0 28px; padding: 24px; min-width: 0; }
+.optimizer-heading, .optimizer-heading > div { display: flex; align-items: center; gap: 9px; }
+.optimizer-heading { justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+.optimizer-heading svg { color: var(--red); }
+.optimizer-heading h2 { font-size: 20px; }
+.optimizer-heading > span { color: var(--muted); font-size: 12px; }
+.optimizer-intro { margin: 9px 0 20px; color: var(--muted); font-size: 13px; }
+.optimizer-fields { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr) minmax(0, 1.2fr); gap: 16px; align-items: end; }
+.optimizer-fields > label { display: flex; flex-direction: column; gap: 6px; font-size: 12px; font-weight: 500; min-width: 0; }
+.optimizer-fields input[type="text"] { height: 40px; border: 1px solid var(--line); border-radius: 5px; padding: 0 11px; font-variant-numeric: tabular-nums; width: 100%; }
+.optimizer-fields input[aria-invalid="true"] { border-color: var(--red); }
+.optimizer-fields > .optimizer-checkbox { flex-direction: row; align-items: center; min-height: 40px; gap: 8px; }
+.team-optimizer input[type="checkbox"] { accent-color: var(--red); width: 16px; height: 16px; flex-shrink: 0; margin: 0; }
+.optimizer-help { color: var(--muted); font-size: 11px; line-height: 1.7; margin-top: 9px; overflow-wrap: anywhere; }
+.optimizer-invalid { color: #a72c36; }
+.optimizer-locks { border: 0; padding: 0; margin: 18px 0; min-width: 0; }
+.optimizer-locks legend { display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 500; padding: 0; margin-bottom: 8px; }
+.optimizer-locks legend span { color: var(--muted); margin-left: 3px; font-weight: 400; }
+.optimizer-lock-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.optimizer-lock-list label { display: flex; align-items: center; gap: 7px; border: 1px solid var(--line); border-radius: 5px; min-height: 38px; padding: 7px 10px; font-size: 12px; cursor: pointer; }
+.optimizer-lock-list label.is-locked { border-color: #df969c; background: #fff4f5; color: #ac2833; }
+.optimizer-run-row { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; }
+.optimizer-run-row > .optimizer-help { margin: 0; }
+.optimizer-secondary { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 5px; font-size: 12px; background: #fff; }
+.optimizer-secondary:hover:not(:disabled) { background: var(--soft); }
+.optimizer-pending { margin-top: 14px; color: var(--muted); font-size: 12px; }
+.optimizer-error { display: flex; gap: 8px; padding: 12px; margin-top: 16px; color: #a72c36; background: #fff0f1; border-radius: 5px; font-size: 12px; }
+.optimizer-error svg { margin-top: 2px; }
+.optimizer-error span { display: block; font-size: 11px; margin-top: 3px; }
+.optimizer-result { border-top: 1px solid var(--line); margin-top: 22px; padding-top: 20px; }
+.optimizer-result-heading { display: flex; justify-content: space-between; gap: 15px; align-items: center; }
+.optimizer-result-heading > div { display: flex; gap: 4px; flex-direction: column; }
+.optimizer-result-heading > div > span { font-size: 12px; color: var(--muted); }
+.optimizer-result-heading strong { font-size: 32px; line-height: 1.25; color: var(--red); font-variant-numeric: tabular-nums; }
+.optimizer-result-heading strong small { font-size: 14px; color: var(--muted); font-weight: 400; margin-left: 5px; }
+.optimizer-result-heading > p { font-size: 12px; color: var(--muted); text-align: right; }
+.optimizer-components { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 20px; background: #f6f8fa; border-radius: 5px; }
+.optimizer-components > div { display: flex; flex-direction: column; gap: 3px; padding: 14px 16px; }
+.optimizer-components > div + div { border-left: 1px solid #e2e6eb; }
+.optimizer-components span { font-size: 12px; color: var(--muted); }
+.optimizer-components strong { font-size: 21px; font-variant-numeric: tabular-nums; }
+.optimizer-components small { color: var(--muted); font-size: 11px; }
+.optimizer-weakness { font-size: 12px; color: var(--muted); margin-top: 12px; }
+.optimizer-members { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 10px; margin-top: 20px; }
+.optimizer-members article { text-align: center; min-width: 0; border: 1px solid var(--line); border-radius: 6px; padding: 10px 4px; }
+.optimizer-members article > button { display: flex; align-items: center; flex-direction: column; width: 100%; padding: 0; }
+.optimizer-members article > button:hover h3 { color: var(--red); }
+.optimizer-members .pokemon-art, .optimizer-members .art-fallback { width: 84px; height: 84px; object-fit: contain; margin-bottom: 5px; }
+.optimizer-members h3 { font-size: 14px; margin: 4px 0 6px; }
+.optimizer-members article > button > small { color: var(--muted); font-size: 10px; }
+.optimizer-members .type-row { justify-content: center; flex-wrap: wrap; gap: 3px; }
+.optimizer-members .type-badge { padding: 2px 5px; font-size: 10px; }
+.optimizer-member-stat { display: block; color: var(--muted); font-size: 10px; margin-top: 7px; }
+.optimizer-curve { margin: 24px 0 0; }
+.optimizer-curve figcaption { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 15px; }
+.optimizer-curve figcaption strong { font-size: 14px; }
+.optimizer-curve figcaption span { display: flex; align-items: center; gap: 5px; font-size: 11px; color: var(--muted); }
+.optimizer-curve figcaption i { width: 16px; height: 3px; background: #cd303b; margin-left: 9px; }
+.optimizer-curve figcaption i.mean { background: #6d90ad; }
+.optimizer-plot { display: flex; height: 160px; }
+.optimizer-y-axis { width: 34px; flex-shrink: 0; display: flex; flex-direction: column; justify-content: space-between; color: var(--muted); font-size: 10px; line-height: 1; }
+.optimizer-plot svg { min-width: 0; width: calc(100% - 34px); height: 160px; overflow: visible; }
+.optimizer-grid-line { stroke: #e5e9ee; stroke-width: 1; vector-effect: non-scaling-stroke; }
+.optimizer-best-line, .optimizer-mean-line { fill: none; stroke-width: 2; vector-effect: non-scaling-stroke; stroke-linejoin: round; }
+.optimizer-best-line { stroke: #cd303b; }
+.optimizer-mean-line { stroke: #6d90ad; }
+.optimizer-x-axis { display: flex; justify-content: space-between; margin: 8px 0 0 34px; color: var(--muted); font-size: 10px; }
+.optimizer-actions { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 20px; }
+.optimizer-method { border-top: 1px solid var(--line); padding-top: 15px; margin-top: 20px; }
+.optimizer-method summary { font-size: 12px; color: var(--muted); cursor: pointer; }
+.optimizer-method p { margin-top: 8px; font-size: 12px; color: var(--muted); overflow-wrap: anywhere; }
+@media (max-width: 1100px) {
+  .optimizer-members { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .team-optimizer { padding: 16px; }
+  .optimizer-fields { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 10px; }
+  .optimizer-fields > .optimizer-checkbox { grid-column: 1 / -1; }
+  .optimizer-result-heading { align-items: flex-start; }
+  .optimizer-result-heading > p { font-size: 10px; }
+  .optimizer-components > div { padding: 10px 8px; }
+  .optimizer-components span, .optimizer-components small { font-size: 10px; }
+  .optimizer-components strong { font-size: 18px; }
+  .optimizer-members { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .optimizer-heading h2 { font-size: 18px; }
+}
+@media (max-width: 360px) {
+  .team-optimizer { padding: 12px; }
+  .optimizer-fields { grid-template-columns: minmax(0, 1fr); }
+  .optimizer-result-heading { flex-direction: column; gap: 9px; }
+  .optimizer-result-heading > p { text-align: left; }
+  .optimizer-components { grid-template-columns: minmax(0, 1fr); }
+  .optimizer-components > div { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; }
+  .optimizer-components > div + div { border-left: 0; border-top: 1px solid #e2e6eb; }
+  .optimizer-components small { grid-column: 1 / -1; }
+  .optimizer-actions > button { width: 100%; }
+}
